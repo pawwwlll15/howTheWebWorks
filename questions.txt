@@ -1,0 +1,50 @@
+1.What is HTTP?: Hypertext Transfer Protocol. it is the foundation of data communication for www. HTTP is a set of rules
+on how communication between servers are done. A standardized way of communication. 
+
+
+
+2.What is URL?: Uniform Resource Locator. used to send requests like HTTP requests.
+The url first specifices the protocol followed by the Hostname. Next is a port number, but
+it is rare you ever need to specifiy a port #. Most hosts have default ports.
+Next section of the url is the resource address. 'some/page.html'. Lastly is the Query.
+the query is extra information to find specific requests on the resource. Great example,
+is a search bar within a website. Query always start with ? followed by something equalling something else. 
+
+
+3. What is DNS?: Domain Name System. This system allows for readability and introduces
+hostnames. These hostnames like 'google.com' are representations of their host ip address.
+This makes it much easier to navigate networks / the internet. 
+
+4. The query is extra information to find specific requests on the resource. Great example,
+is a search bar within a website. Query always start with ? followed by something equalling something else. Ex: ?x=1
+
+5. Two very common HTTP verbs are GET and POST. GET retrieves the data without changing the server state, while POST submits the data to either modify or create elements on the server. 
+GET example would be typing in a specific URL and the server responding with the content of that url. POST is more like creating a facebook page, or 'posting' on social media.
+When you log into facebook, you are then modifying the webpage to display your profile or wall. 
+
+
+6. HTTP request is sent to a server. That server may need to communicate with a database associated with your request. 
+After that it sends that response back to your browser. These are the steps:
+1. specify a method(example is GET).
+2. specify a HTTP protocol
+3. specify a URL
+4. specify headers(not always manditory. But some examples are cookies and current date).
+
+7. The HTTP response includes a response status-code,body and headers that have some metadata like date, remote addresses ect.
+But the response body is where all of the actual stuff is that was sent back from the server to you. 
+Some common status-codes are:
+1.200-everythings ok
+2.304-youve been to this page before, nothing has changed.
+3.404- error, not found.
+4.500-server has an internal problem: connected to server, but there is some error preventing request.
+5.301-moved permanently
+There are a ton of status-codes developer.mozilla.org has a complete list.
+
+8. HTTP header is a way for you and the server you are sending/recieving the request/response from to exchange additional information.
+This can include anything from content-type to location to language. some examples are status codes, user-agents, Accept-Language ect.
+
+9. It would take eons to really explain every step it seems. But here is the cliffnoted version:
+First the DNS looks up the IP address associated with the hostname you are searching for. If that host name exists.
+You will then typically send a HTTP request to said server for the specific information you are looking for. This request would include a URL.
+the url is broken down into mulitple segments including the specific protocol and hostname you are searching for. If you are requesting specific
+information from that server. the URL will also include a Query at the end of it. This will help locate exactly what you are requesting.
